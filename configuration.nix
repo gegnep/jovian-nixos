@@ -11,10 +11,16 @@
     
     devices.steamdeck = {
       enable = true;
-      autoUpdate = false;
+      enableGyroDsuService = true;
+      autoUpdate = true;
     };
-    
+
     hardware.has.amd.gpu = true;
+
+    decky-loader = {
+      enable = true;
+      user = "deck";
+    };
   };
 
   boot = {
@@ -55,6 +61,7 @@
     git
     firefox
     btop
+    protonup-qt
 
     papirus-icon-theme
     phinger-cursors
