@@ -12,7 +12,7 @@
     devices.steamdeck = {
       enable = true;
       enableGyroDsuService = true;
-      autoUpdate = true;
+      autoUpdate = false;
     };
 
     hardware.has.amd.gpu = true;
