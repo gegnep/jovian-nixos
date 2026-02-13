@@ -41,10 +41,11 @@
 
   xdg.desktopEntries.return-to-gaming = {
     name = "Return to Gaming Mode";
-    exec = "return-to-gaming-mode";
+    exec = "qdbus org.kde.Shutdown /Shutdown logout";
     icon = "steam";
     terminal = false;
     categories = [ "System" ];
+    comment = "Logout and return to Steam";
   };
 
   programs.alacritty = {

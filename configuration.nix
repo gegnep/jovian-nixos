@@ -70,11 +70,6 @@
       flavour = ["mocha"];
       accents = ["lavender"];
      })
-
-    (writeShellScriptBin "return-to-gaming-mode" ''
-      #!/bin/sh
-      loginctl terminate-session $XDG_SESSION_ID
-    '')
   ];
 
   security.rtkit.enable = true;
