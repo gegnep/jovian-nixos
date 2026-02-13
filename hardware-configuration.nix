@@ -24,6 +24,12 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
+  fileSystems."/run/media/deck/sdcard" = {
+    device = "/dev/disk/by-label/sdcard";
+    fsType = "ext4";
+    options = [ "nofail" "x-systemd.device-timeout=5s" ];
+  };
+
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
